@@ -68,7 +68,7 @@ public class FishObjective extends CountingObjective implements Listener {
             return;
         }
         final OnlineProfile onlineProfile = PlayerConverter.getID(event.getPlayer());
-        if (!containsPlayer(onlineProfile) || event.getCaught() == null || event.getCaught().getType() != EntityType.DROPPED_ITEM) {
+        if (!containsPlayer(onlineProfile) || event.getCaught() == null || event.getCaught().getType() != EntityType.ITEM) {
             return;
         }
         if (isInvalidLocation(event, onlineProfile)) {
