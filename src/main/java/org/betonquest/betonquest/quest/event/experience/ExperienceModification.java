@@ -2,7 +2,6 @@ package org.betonquest.betonquest.quest.event.experience;
 
 import com.eteirnum.core.EteirnumCore;
 import com.eteirnum.core.player.attributes.PlayerAttributes;
-import net.Indyuce.mmocore.api.player.attribute.PlayerAttribute;
 import org.bukkit.entity.Player;
 
 import java.util.Optional;
