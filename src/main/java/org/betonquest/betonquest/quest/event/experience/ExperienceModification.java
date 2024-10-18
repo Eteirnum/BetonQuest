@@ -16,28 +16,28 @@ public enum ExperienceModification {
      * Adds the given amount to the player's experience, just experience points.
      */
     ADD_EXPERIENCE("addExperience", (player, amount) -> {
-        PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
+        final PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
         attribute.addExp((int) amount);
     }),
     /**
      * Adds the given amount to the player's experience, levels and or percentage to the next level.
      */
     ADD_LEVEL("addLevel", (player, amount) -> {
-        PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
+        final PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
         attribute.addLevel((int) amount);
     }),
     /**
      * Sets the player's experience to the next level to the given amount.
      */
     SET_EXPERIENCE_BAR("setExperience", (player, amount) -> {
-        PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
+        final PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
         attribute.setExp((int) amount);
     }),
     /**
      * Sets the player's experience-level to the given amount.
      */
     SET_LEVEL("setLevel", (player, amount) -> {
-        PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
+        final PlayerAttributes attribute = EteirnumCore.instance.getPlayerAttributesManager().get(player.getUniqueId());
         attribute.setLevel((int) amount);
     });
 
